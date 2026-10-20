@@ -20,7 +20,7 @@ It runs entirely in the browser. No install, no build step, no account.
 | 01 | **HILLBOMB** | Push off at the top of Potrero Hill and let gravity take over. Ollie the cones, collect coins, then launch off the ledge onto a moving train. |
 | 02 | **LAST TRAIN** | Ride the roof past Oracle Park and Mission Bay. Duck the low signals, grab the surfboard from the glowing doorway, and launch off the nose when the line runs out. |
 | 03 | **BAYBREAK** | Swap to the surfboard midair. Ride the waves, jump buoys, climb the docks and a container ship, and find a white roadster waiting on a cargo deck. |
-| 04 | **ROADSTER.EXE** | Sunset over the bay. Four underbody rocket thrusters ignite one by one and lift the white roadster off the cargo ship. Thread the Bay Bridge tower portals, dodge delivery drones and gulls, boost past the waterfront, and weave through the skyline to land downtown. |
+| 04 | **GOLDEN GATE GAUNTLET** | Fly the white roadster over the bay until the autopilot subscription expires, then jump out onto the Golden Gate Bridge. Skate south through four encounters: venture capitalists throwing money (ride the cash for speed), the Waymo hop (chain jumps across friendly robotaxi roofs), a corgi and iced-coffee stampede (they can bump you, you can't bump them), and a finale of musicians, artists and cyclists ending in a giant jump into the city. About 5 to 6 minutes. |
 | 05 | **THE JOB HUNT** | Back on the board, bombing down a steep California Street toward the Bay Bridge and the Ferry Building at sunset. Dodge traffic, ride the red-and-cream cable car, collect five résumés, then apply at OpenArc HQ. |
 
 Then: **APPLICATION SUBMITTED. STATUS: UNDER REVIEW.** And then, inevitably, an email.
