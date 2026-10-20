@@ -116,9 +116,6 @@ Every asset path is relative, so the game works at `https://barneysmith-sys.gith
 ## Credits
 
 - **Created by:** [Barney J. Smith](https://barneyjsmith.com/)
-- **Built with:** Claude by Anthropic
-- **Level 05 and Level 04 illustrated art:** Barney J. Smith's approved concept art and asset sheet, processed onto the game's pixel grid
-- **Rider animations:** the approved Claude Design character sheet (51 frames, 10 animations)
 - **Font:** [Pixelify Sans](https://github.com/eifetx/Pixelify-Sans) by Stefie Justprince, SIL Open Font License 1.1 (`assets/fonts/OFL.txt`)
 - **Sound:** synthesized live in the browser with the Web Audio API, with no audio files
 
