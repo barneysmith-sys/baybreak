@@ -1,0 +1,78 @@
+{
+  "cell": [
+    170,
+    148
+  ],
+  "anchor": [
+    85,
+    144
+  ],
+  "animations": {
+    "idle": {
+      "file": "idle.png",
+      "frames": 2,
+      "fps": 3,
+      "loop": true
+    },
+    "push": {
+      "file": "push.png",
+      "frames": 6,
+      "fps": 10,
+      "loop": true
+    },
+    "cruise": {
+      "file": "cruise.png",
+      "frames": 6,
+      "fps": 8,
+      "loop": true
+    },
+    "crouch": {
+      "file": "crouch.png",
+      "frames": 4,
+      "fps": 10,
+      "loop": false
+    },
+    "ollie": {
+      "file": "ollie.png",
+      "frames": 7,
+      "fps": 12,
+      "loop": false
+    },
+    "airborne": {
+      "file": "airborne.png",
+      "frames": 5,
+      "fps": 8,
+      "loop": true
+    },
+    "land": {
+      "file": "land.png",
+      "frames": 4,
+      "fps": 12,
+      "loop": false
+    },
+    "brake": {
+      "file": "brake.png",
+      "frames": 4,
+      "fps": 10,
+      "loop": true
+    },
+    "fall": {
+      "file": "fall.png",
+      "frames": 7,
+      "fps": 10,
+      "loop": false
+    },
+    "surf": {
+      "file": "surf.png",
+      "frames": 6,
+      "fps": 8,
+      "loop": true
+    }
+  },
+  "sequences_not_in_export": {
+    "jump": "crouch > ollie > airborne > land (13f), exact frame list only in preview.html in the ZIP",
+    "brake_slide": "held-brake loop, frame list missing",
+    "fall_down": "lie still, frame list missing",
+    "idle_board": "slow bob on the board, frame list missing"
+  }
+}
