@@ -1,5 +1,8 @@
 # Changelog
 
+## Roadster correction
+- The foreground suspension bridge is removed from the Roadster flight: its cables, deck, towers, steelwork, collision boxes and deck surface. The illustrated panorama, including the distant Bay Bridge, is unchanged. Drones, gulls, blimp, coins, timing and the autopilot popup are unchanged.
+
 ## Final release pass
 - **Roadster flight:** rebuilt on the illustrated San Francisco panorama as separate sky and city layers (`assets/art/flight-sky.png`, `flight-city.png`): Oracle Park, downtown, Salesforce Tower, the Transamerica Pyramid, the Embarcadero, the Ferry Building and the Bay Bridge. The placeholder cream clock building, pier sheds and Ghirardelli are removed.
 - **Corgi Stampede:** only the five illustrated corgi girls and their dogs, 39 jumpable pairs in a singles, doubles and triples rhythm. Cups, ice, spills, leashes and loose projectiles are removed.

@@ -4,24 +4,12 @@ Repository: https://github.com/barneysmith-sys/baybreak
 
 1. Unzip `BAYBREAK-GITHUB-READY.zip`. There is no wrapper folder; `index.html` is at the top.
 2. On GitHub: **Add file > Upload files**.
-3. Drag in the files below, keeping their folders. GitHub overwrites files with the same name and leaves everything else in the repo alone.
-4. Commit to `main`. Vercel redeploys automatically.
+3. Drag in the files below and commit to `main`. Vercel redeploys automatically.
 
-## Replace (1)
-- `index.html`
-
-## Add (11)
-- `assets/art/flight-city.png`
-- `assets/art/flight-sky.png`
-- `assets/l4/giants-billboard.png`
-- `assets/l4/walkerL-1.png`
-- `assets/l4/walkerL-2.png`
-- `assets/l4/walkerL-3.png`
-- `assets/l4/walkerL-4.png`
-- `assets/l4/walkerL-5.png`
-- `UPLOAD-INSTRUCTIONS.md`
+## Replace (4)
+- `index.html` (the only game change: the Roadster foreground bridge is removed)
 - `CHANGELOG.md`
+- `UPLOAD-INSTRUCTIONS.md`
 - `MANIFEST.md`
 
-## Leave alone
-`vercel.json`, `favicon.ico`, `assets/icons/`, `assets/social/` and all Open Graph, Twitter and SEO tags are byte-identical to GitHub `main`. They're in the ZIP so it's a complete copy, but you don't need to upload them.
+Every other file in the ZIP is byte-identical to what's already on GitHub `main`, including `vercel.json`, `favicon.ico`, `assets/icons/`, `assets/social/` and all artwork. The ZIP contains them so it's a complete copy, but you don't need to upload them.

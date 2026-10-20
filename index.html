@@ -1493,9 +1493,9 @@ function emitThrust(x,y,th,n){for(let k=0;k<n;k++){const i=k%4,hot=th>0.8;parts.
   if(th>0.6&&Math.random()<0.3)parts.push({x:x-30,y:y+14,vx:-50,vy:10,g:-10,life:0.8,t:0,c:'#c9b8e0'});}
 
 /* ---------- flight level geometry ---------- */
-const FLY_RECTS=[];const FLY_DECK={x0:520,x1:2300,top:148,bot:164};
+const FLY_RECTS=[];const FLY_DECK={x0:0,x1:-1,top:0,bot:0}; // foreground bridge removed: no deck surface anywhere
 const FLY_PORTALS=[[34,100],[172,222]];
-for(const tx of[1000,1800])for(const[a,h]of[[0,34],[100,48],[164,8],[222,40]])FLY_RECTS.push({x:tx,y:a,w:26,h});
+
 const FLY_BLD=[[3400,70,152,'glass'],[3480,52,112,'deco'],[3600,90,170,'stone'],[3700,58,74,'glass'],[3780,80,132,'brick'],[3880,64,92,'deco'],[3972,96,160,'stone'],
   [4090,56,64,'glass'],[4170,80,140,'brick'],[4270,92,104,'deco'],[4380,70,170,'stone'],[4470,104,122,'glass'],[4600,80,152,'brick']];
 for(const[x,w,t]of FLY_BLD)FLY_RECTS.push({x,y:t,w,h:270-t});
@@ -1541,18 +1541,7 @@ function shedPx(g,x,w,top,base){R(g,x,top+4,w,base-top-4,'#ddd3b8');R(g,x,top,w,
   for(let i=x+6;i<x+w-10;i+=16){R(g,i,top+10,10,base-top-14,'#4a4a4e');R(g,i+1,top+9,8,1,'#4a4a4e');R(g,i+1,top+11,8,3,'#7b7f88');}
   for(let i=x;i<x+w;i+=10)R(g,i,base,3,FLY_WATER-base+4,'#5a4a3a');}
 function buildFlyNear(){const[c,g]=mk(FLY_W,H);const r=RNG(91);
-  // cables + suspenders (behind deck)
-  for(let x=520;x<=2300;x++){const cy=Math.round(cableY(x));if(x%7===0&&!((x>=1000&&x<1026)||(x>=1800&&x<1826)))for(let y=cy+2;y<148;y++)P(g,x,y,y%2?'#5a6f9a':'#4a5f8a');R(g,x,cy-1,1,3,'#24345a');P(g,x,cy-1,'#8aa0c8');}
-  // deck truss
-  for(let x=520;x<2300;x++){P(g,x,146,'#7a8aaa');if(x%4===0)P(g,x,147,'#7a8aaa');R(g,x,148,1,1,'#b8c4da');R(g,x,149,1,3,'#4a5a7a');R(g,x,161,1,3,'#3a4a6a');
-    for(let y=152;y<161;y++)if(((x-y)%12+12)%12===0||((x+y)%12)===0)P(g,x,y,'#3e5076');else if(y===156&&x%3===0)P(g,x,y,'#2a3858');}
-  for(let x=540;x<2300;x+=40){R(g,x,136,1,10,'#2e3d5c');R(g,x,136,3,1,'#2e3d5c');P(g,x+2,137,'#ffe9a8');}
-  // towers with portals
-  for(const tx of[1000,1800]){for(let y=0;y<250;y++){const portal=FLY_PORTALS.some(([a,b])=>y>=a&&y<b);if(portal)continue;R(g,tx,y,26,1,'#3a4d78');P(g,tx,y,'#6a86c0');P(g,tx+25,y,'#22345a');
-      if(((y+tx)%14)===0)R(g,tx+2,y,22,1,'#2a3b62');}
-    for(let y=0;y<250;y+=14){line(g,tx+3,y,tx+22,y+13,'#4e66a0');line(g,tx+22,y,tx+3,y+13,'#4e66a0');}
-    for(const[a,b]of FLY_PORTALS){R(g,tx-2,a-3,30,3,'#2a3b62');R(g,tx-2,b,30,3,'#2a3b62');R(g,tx-2,a-3,30,1,'#8aa0c8');R(g,tx-1,a,2,b-a,'#22345a');R(g,tx+25,a,2,b-a,'#22345a');}
-    R(g,tx-3,0,32,4,'#2a3b62');P(g,tx+12,0,'#ff3a2a');P(g,tx+13,0,'#ff3a2a');R(g,tx-6,226,38,22,'#8d98ab');R(g,tx-6,226,38,1,'#c4ccd8');R(g,tx+28,226,4,22,'#6a7488');}
+  // foreground bridge removed: the illustrated panorama carries the Bay Bridge in the distance
   // waterfront: drawn by the illustrated panorama layers (flight-city.png)
   // financial district skyline
   for(const[x,w,t,st]of FLY_BLD){bld(g,x,w,t,270,st,r,true);roofStuff(g,x,w,t,r);}
