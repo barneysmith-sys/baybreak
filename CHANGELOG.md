@@ -1,5 +1,12 @@
 # Changelog
 
+## Mobile release
+- **Touch controls:** big Win98-style controls on phones and tablets only. Skating: ◀ ▶ BRK, DUCK, ACT and a round JUMP. Roadster: UP, DOWN and BOOST. Multi-touch, pressed states and light vibration where supported. The controls change with the level and hide during dialogs and cutscenes.
+- **Phone layout:** the game window stays sharp at its original aspect ratio. In portrait, the controls sit below the window. In landscape, they sit in the side gutters and the taskbar steps aside. Controls never cover the play area, and iPhone safe areas are respected.
+- **Phone start:** a big ▶ TAP TO PLAY on the title screen, and a non-blocking "rotate for a bigger view" tip in portrait.
+- **Readability:** larger readable dialogs, a larger HUD and a full-screen X phone on mobile. No accidental scrolling or pinch-zoom while playing.
+- **Desktop:** completely unchanged.
+
 ## Roadster correction
 - The foreground suspension bridge is removed from the Roadster flight: its cables, deck, towers, steelwork, collision boxes and deck surface. The illustrated panorama, including the distant Bay Bridge, is unchanged. Drones, gulls, blimp, coins, timing and the autopilot popup are unchanged.
 

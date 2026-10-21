@@ -2,8 +2,8 @@
 
 63 files. Paths are relative to the repository root.
 
-- `CHANGELOG.md` (1 KB)
-- `MANIFEST.md` (2 KB)
+- `CHANGELOG.md` (2 KB)
+- `MANIFEST.md` (1 KB)
 - `README.md` (6 KB)
 - `UPLOAD-INSTRUCTIONS.md` (1 KB)
 - `assets/art/bay-panorama.png` (191 KB)
@@ -63,5 +63,5 @@
 - `assets/social/og-image.jpg` (361 KB)
 - `assets/social/og-image.png` (1340 KB)
 - `favicon.ico` (10 KB)
-- `index.html` (1418 KB)
+- `index.html` (1426 KB)
 - `vercel.json` (1 KB)
